@@ -19,13 +19,19 @@ int main(int argc, char *argv[]) {
 
     temp = atof(argv[1]);
 
-    if (strcmp(argv[2], "f") == 0) {
+    if (strcmp(argv[2], "F") == 0) {
         fahrenheit = celsius_to_fahrenheit(temp);
         printf("%.2f°C = %.2f°F\n", temp, fahrenheit);
-    } else if (strcmp(argv[2], "c") == 0) {
+    } 
+
+    else if (strcmp(argv[2], "C") == 0) {
         celsius = fahrenheit_to_celsius(temp);
         printf("%.2f°F = %.2f°C\n", temp, celsius);
     } 
+
+    else {
+        printf("Usage: ./temp <temperature> <C|F> (to celsius|to fahrenheit)\n");
+    }
 
     return EXIT_SUCCESS;
 }
