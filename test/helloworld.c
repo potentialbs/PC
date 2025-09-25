@@ -1,6 +1,12 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 int main() {
-    printf("Hello, world!\n");
-    return 0;
-}
+    int variable;
+
+    if (variable){
+        printf("Hello world!\n");
+    }
+    
+    return EXIT_SUCCESS;
+};
